@@ -38,6 +38,10 @@ const router = createRouter({
         {
           path:"/assets",
           component:()=>import("@/views/Assets/assets.vue")
+        },
+        {
+          path:"/lang",
+          component:()=>import("@/views/Lang/lang.vue")
         }
       ]
     }

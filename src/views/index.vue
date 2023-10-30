@@ -2,34 +2,34 @@
 import { ref } from "vue";
 import { useRouter } from "vue-router";
 
-const router = useRouter()
+const router = useRouter();
 
 const active = ref("行情");
 
 const leftData = ref([
   {
     title: "行情",
-    path:"/quote"
+    path: "/quote",
   },
   {
     title: "法币交易",
-    path:"/fait"
+    path: "/fait",
   },
   {
     title: "币币交易",
-    path:"/coins"
+    path: "/coins",
   },
   {
     title: "合约交易",
-    path:"/contract"
+    path: "/contract",
   },
   {
     title: "锁仓交易",
-    path:"/lock"
+    path: "/lock",
   },
   {
     title: "我的资产",
-    path:"/assets"
+    path: "/assets",
   },
 ]);
 
@@ -37,23 +37,25 @@ const rightData = ref([
   {
     icon: "person",
     title: "个人中心",
-    path:"/mine"
+    path: "/mine",
   },
   {
     icon: "language",
     title: "简体中文",
+    path:"/lang"
   },
 ]);
 
 const changeTab = (item) => {
   active.value = item.title;
-  router.push(item.path)
+  router.push(item.path);
 };
 
 const changeTabRight = (item) => {
   active.value = item.title;
-  router.push(item.path)
+  router.push(item.path);
 };
+
 </script>
 
 <template>
@@ -73,14 +75,14 @@ const changeTabRight = (item) => {
           @click="changeTabRight(item)"
           v-for="(item, index) in rightData"
           :key="index"
-          :class="active==item.title?'active':''"
+          :class="active == item.title ? 'active' : ''"
         >
           <span class="material-symbols-outlined"> {{ item.icon }} </span>
           <span>{{ item.title }}</span>
         </div>
       </div>
     </div>
-        <RouterView/>
+    <RouterView />
   </div>
 </template>
 
