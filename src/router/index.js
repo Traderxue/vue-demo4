@@ -36,8 +36,8 @@ const router = createRouter({
           component:()=>import("@/views/Coins/coin.vue")          
         },
         {
-          path:"/assets",
-          component:()=>import("@/views/Assets/assets.vue")
+          path:"/mining",
+          component:()=>import("@/views/Mining/mining.vue")
         },
         {
           path:"/lang",

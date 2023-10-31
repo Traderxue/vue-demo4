@@ -95,7 +95,7 @@ const shopList = ref([
                 <p class="parcent">{{item.credit}}</p>
             </div>
           </span>
-          <span style="color: #00b8a9;">{{item.num}} USDT</span>
+          <span style="color: #30e3ca;">{{item.num}} USDT</span>
           <span style="color: #30e3ca;">{{item.limit}} CNY</span>
           <span style="color: #f5f5f5;">{{item.unit_price}} CNY</span>
           <span class="material-symbols-outlined credit"> credit_card </span>

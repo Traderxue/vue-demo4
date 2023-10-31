@@ -28,8 +28,8 @@ const leftData = ref([
     path: "/lock",
   },
   {
-    title: "我的资产",
-    path: "/assets",
+    title: "矿池",
+    path: "/mining",
   },
 ]);
 
