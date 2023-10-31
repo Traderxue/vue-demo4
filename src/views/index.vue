@@ -16,10 +16,6 @@ const leftData = ref([
     path: "/fait",
   },
   {
-    title: "币币交易",
-    path: "/coins",
-  },
-  {
     title: "合约交易",
     path: "/contract",
   },
@@ -30,6 +26,10 @@ const leftData = ref([
   {
     title: "矿池",
     path: "/mining",
+  },
+  {
+    title: "邀请好友",
+    path: "/invite",
   },
 ]);
 

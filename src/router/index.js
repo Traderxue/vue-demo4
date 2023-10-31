@@ -32,8 +32,8 @@ const router = createRouter({
           component:()=>import("@/views/Contract/contract.vue")
         },
         {
-          path:"/coins",
-          component:()=>import("@/views/Coins/coin.vue")          
+          path:"/invite",
+          component:()=>import("@/views/Invite/invite.vue")          
         },
         {
           path:"/mining",
