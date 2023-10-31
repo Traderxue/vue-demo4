@@ -116,7 +116,7 @@ const subData = ref([
         }
         button{
             width: 30%;
-            height: 50px;
+            height: 45px;
             border-radius: 45px;
             font-weight: 600;
             font-size: 18px;
